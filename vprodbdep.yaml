@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vprodb
-          image: docker26priya/vprofiledb:V1
+          images: docker26priya/vprofiledb:V1
           args:
             - "--ignore-db-dir=lost+found"
           volume:
