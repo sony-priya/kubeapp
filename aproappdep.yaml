@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vproapp
-          images: docker26priya/vprofileapptomcat:V1
+          image: docker26priya/vprofileapptomcat:V1
           ports:
             - name: vproapp-port
               containerPort: 8080

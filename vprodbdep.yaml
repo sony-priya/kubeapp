@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vprodb
-          images: docker26priya/vprofiledb:V1
+          image: docker26priya/vprofiledb:V1
           args:
             - "--ignore-db-dir=lost+found"
           volume:
@@ -38,6 +38,6 @@ spec:
         - name: vpro-db-data
           awsElasticBlockStore:
             volumeID: vol-0e885301c3a1f1ecd
-            fstype: ext4
+            fsType: ext4
 
     
