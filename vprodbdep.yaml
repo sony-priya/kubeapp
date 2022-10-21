@@ -19,7 +19,7 @@ spec:
           image: docker26priya/vprofiledb:V1
           args:
             - "--ignore-db-dir=lost+found"
-          volume:
+          volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
           ports:
